@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h1>ToDo JS Vanilla</h1>
+		<hr size="6" color="orange" />
+
+		<div class="container" id="todo">
+			<div class="box box-one">
+				<span class="task" v-for="(myTask, i) in task" v-on:click="completed(myTask)">
+					#{{ myTask.id }} {{ myTask.taskName }}
+				</span>
+			</div>
+
+			<div class="box box-two">
+				<span class="task through" v-for="myTask in taskCompleted">
+					#{{ myTask.id }} {{ myTask.taskName }}
+				</span>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="./vue.js"></script>
+	</body>
+</html>
