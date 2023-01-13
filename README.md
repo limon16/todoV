@@ -1,3 +1,3 @@
 # todoV
 
-limon16.github.io/todov
+https://limon16.github.io/todoV/
